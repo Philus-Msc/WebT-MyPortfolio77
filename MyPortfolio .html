@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>T. A. Pobee | IT Portfolio</title>
+<p style="color:red;font-size:18px;text-align:center"> Welcome To TAP Website</p>
+  
+  <style type="text/css">
+  hr{color:red;} 
+  p{margin-left: 30px;}
+  </style>
+ 
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Hamburger Menu</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+nav{
+    background:#D3D3D3;
+    overflow:hidden;
+}
+
+.logo{
+
+    color:white;
+    font-size:24px;
+    padding:14px 20px;
+    display:inline-block;
+}
+
+.menu{
+    float:right;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    display:inline-block;
+}
+
+.menu a:hover{
+    background:#D3D3D3;
+}
+
+.icon{
+    display:none;
+    float:right;
+
+    color:white;
+    font-size:30px;
+    padding:8px 20px;
+    cursor:pointer;
+}
+
+/* Mobile Screen */
+@media screen and (max-width:768px){
+
+.menu{
+    display:none;
+    width:100%;
+}
+
+.menu a{
+    display:block;
+    text-align:center;
+    border-top:1px solid #555;
+}
+
+.icon{
+    display:block;
+}
+
+
+.menu.show{
+    display:block;
+}
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <span class="logo">My Website</span>
+
+    <span class="icon" onclick="toggleMenu()">&#9776;</span>
+
+    <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
+
+  
+</head>
+<body style="background-color:#FFD700;" />   
+<hr>
+ <p> <header class="header">
+    <nav class="navbar">
+      <p style="color: green; font size: 22px;">SOFTWARE ENGINEER</div></p>
+	  <p style="color: red; font size: 20px;"> Check This One Out </p>
+	  <img src="media/self.png " width=375px, height=350px alt="Profile Pic"/>
+	  
+	  <p> <h3> Must Listen</h3>
+	  <audio controls = "controls">
+	  <source src = "media/For upload.m4a" />
+	  </audio> </p>
+
+     <p> <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul></p>
+	  
+	  <p style="color: red; font size: 20px;"> LINKS DISPLAY</p>
+	 <p> <a href="http://www.Google.com/"target="_blank">Google</a> 
+	       <a href="SocialMedia.html/" target="_blank">My Media</a> </p>
+</hr>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn">🌙</button>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h1 style="color:blue;">Hello, I'm Theophilus A. Pobee</h1>
+        <p>
+          A passionate IT student from Ghana focused on web development,
+          user-friendly design, and digital solutions for local communities.
+        </p>
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div>
+          <p>
+            <em><b>PASSIONATE ABOUT WEB DEVELOPMENT, TECHNOLOGY, 
+			CYBER SECURITY AND ARTIFICIAL INTELLIGENCE.
+        CREATING RESPONSIVE AND INTERACTIVE USER FRIENDLY WEBSITES 
+	    USING MODERN WEB TECHNOLOGIES IS MY HOBBY 
+        COMMITMENT, AVAILABILITY, HARDWORKING, 
+		HONESTY AMONG OTHERS ARE MY KEY TRAITS. 
+		AN MSC IT GRADUATE. CODING, RESAERCHING AND PROBLEM SOLVING ARE MY ENCOURAGMENT
+          </em></b> </p>
+          <p>
+            My background includes HTML, CSS, JavaScript, and building clean,
+            accessible, and mobile-friendly websites.
+          </p>
+        </div>
+        <p><div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML5</li>
+			<li>Networking</li>
+			<li>My SQL</LI>
+			<li>Info Security</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li> 
+			</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>School Portal UI</h3>
+          <p>
+            A clean portal design for students to access results, notices, and
+            academic records online.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Ghana Market Finder</h3>
+          <p>
+            A simple website helping users locate local markets and compare
+            product availability in major Ghanaian towns.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Church Event Website</h3>
+          <p>
+            A responsive event and announcement website for a local church
+            community.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+        <p>  <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" />
+          <small class="error" id="nameError"></small>
+		  </p>
+        </div>
+
+        <div class="form-group">
+         <p> <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+          <small class="error" id="emailError"></small>
+		  </p>
+        </div>
+		
+		<div class="form-group">
+         <p> <label for="Phone number">Phone number</label>
+          <input type="Phone" id="Phone" name="Phone" />
+          <small class="error" id="phoneError"></small>
+		  </p>
+        </div>
+		
+		<div class="form-group">
+         <p> <label for="Town">Town</label>
+          <input type="Town" id="Town" name="Town" />
+          <small class="error" id="townError"></small>
+		  </p>
+        </div>
+		
+		<div class="form-group">
+         <p> <label for="GPS Address">GPS Address</label>
+          <input type="GPS Address" id="GPS Address" name="GPS Address" />
+          <small class="error" id="GPSError"></small>
+		  </p>
+        </div>
+		
+        <div class="form-group">
+         <p> <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <small class="error" id="messageError"></small>
+		  </p>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="successMessage" class="success"></p>
+      </form>
+    </section>
+  </main>
+  
+  <h3> Select the Age you belong </h3>
+		<p>
+		<label> <input type = "radio" name = "age" value ="below19" checked = "checked" /> 0-19 </label>  
+		<label> <input type = "radio" name = "age" value = "20-29" /> 20-29 </label> 
+		<label> <input type = "radio" name = "age" value = "30-39" /> 30-39 </label>  
+		<label> <input type = "radio" name = "age" value = "above40" /> above 40 </label>  
+		</p>
+  
+  <head>
+<title>Event Hub</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+}
+
+.header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+.container{
+    width:90%;
+    margin:20px auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.widget{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px gray;
+}
+
+.widget h2{
+    color:#333;
+}
+
+.event{
+    background:#e6f2ff;
+
+    padding:10px;
+    margin:10px 0;
+    border-left:5px solid blue;
+}
+
+button{
+    background:#008000;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005500;
+}
+
+
+/* Mobile Responsive Design */
+@media(max-width:600px){
+
+.container{
+
+    flex-direction:column;
+}
+
+.widget{
+    width:auto;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="header">
+<h1>Event Hub</h1>
+<p>A platform for learners to discover and share events</p>
+</div>
+
+
+<div class="container">
+
+
+<div class="widget">
+
+<h2>Upcoming Events</h2>
+
+<div class="event">
+<h3>Web Development Workshop</h3>
+<p>Date: 15 July 2026</p>
+<p>Time: 10:00 AM</p>
+</div>
+
+
+<div class="event">
+<h3>AI Learning Seminar</h3>
+<p>Date: 20 July 2026</p>
+<p>Time: 2:00 PM</p>
+</div>
+
+
+<button onclick="reminder()">
+Set Reminder
+</button>
+
+</div>
+
+
+
+<div class="widget">
+
+<h2>Share an Event</h2>
+
+<p>
+Learners can share school, technology and career events with others.
+</p>
+
+<input type="text" placeholder="Event Name">
+
+<br><br>
+
+<input type="date">
+
+<br><br>
+
+<button>
+Add Event
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+function reminder(){
+
+alert("Event reminder has been set!");
+
+}
+
+</script>
+
+
+</body>
+</html>
+
+  
+		 </div>
+		 
+
+  <footer class="footer">
+    <p>&copy; 2026 T. A. Pobee | MSC IT - Web Tech. Portfolio All Rights Reserved</p>
+	<br>
+	<p style= "text-align:center;"> Cookies </p> 
+	<p style= "text-align:center;"> <button type="Accept" class="btn">Accept</button>
+	<p style= "text-align:center;"> <button type="Reject" class="btn">Reject</button></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
